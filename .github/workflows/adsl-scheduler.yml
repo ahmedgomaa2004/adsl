@@ -36,5 +36,14 @@ jobs:
       - name: Install Playwright browser
         run: python -m playwright install --with-deps chromium
 
+      - name: Validate required secrets
+        run: |
+          for name in VODA_MOBILE VODA_PASSWORD TELEGRAM_BOT_TOKEN TELEGRAM_CHAT_ID; do
+            if [ -z "${!name}" ]; then
+              echo "::error::$name is missing or empty. Add it in Settings > Secrets and variables > Actions."
+              exit 1
+            fi
+          done
+
       - name: Run script
         run: python vodafone_adsl_to_telegram.py
