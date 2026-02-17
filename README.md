@@ -55,10 +55,6 @@ Add:
 - `TELEGRAM_BOT_TOKEN`
 - `TELEGRAM_CHAT_ID`
 
-Optional:
-- `VODA_LOGIN_URL`
-- `VODA_ADSL_URL`
-
 ### Push to GitHub
 
 ```bash

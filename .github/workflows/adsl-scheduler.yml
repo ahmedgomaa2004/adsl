@@ -16,8 +16,6 @@ jobs:
       VODA_PASSWORD: ${{ secrets.VODA_PASSWORD }}
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-      VODA_LOGIN_URL: ${{ secrets.VODA_LOGIN_URL }}
-      VODA_ADSL_URL: ${{ secrets.VODA_ADSL_URL }}
       PLAYWRIGHT_HEADLESS: "true"
       PLAYWRIGHT_BROWSER_CHANNEL: ""
       SEND_ERROR_TO_TELEGRAM: "true"
